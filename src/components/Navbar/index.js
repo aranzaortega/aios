@@ -12,17 +12,17 @@ import {
     NavBtnLink
 } from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
            <Nav>
                <NavbarContainer>
-                   <NavLogo to='/'>
-                       aios
-                   </NavLogo>
-                   <MobileIcon>
+                    <NavLogo to='/'>
+                        &lt;aios&#47;&gt;
+                    </NavLogo>
+                    <MobileIcon onClick={toggle}>
                         <FaBars/>
-                   </MobileIcon>
+                    </MobileIcon>
                     <NavMenu>
                         <NavItem>
                             <NavLinks to="about">About</NavLinks>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </NavMenu>
                     <NavBtn>
                             <NavBtnLink to="/contact">Contact</NavBtnLink>
-                        </NavBtn>
+                    </NavBtn>
                </NavbarContainer>
            </Nav>
         </>
