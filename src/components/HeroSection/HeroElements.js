@@ -8,19 +8,9 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 100vh;
     position: relative;
     z-index: 1;
-
-    :before{
-        content: '';
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background: rgb(7,0,111);
-        background: linear-gradient(90deg, rgba(7,0,111,1) 0%, rgba(0,146,255,1) 50%, rgba(231,35,128,1) 100%);
-    }
 `;
 
 
