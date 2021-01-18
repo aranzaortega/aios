@@ -3,7 +3,10 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
-import { homeObjOne } from '../components/AboutSection/Data';
+import SkillsSection from '../components/SkillsSection';
+import Footer from '../components/Footer';
+import { aboutObj } from '../components/AboutSection/Data';
+import { skillsObj } from '../components/SkillsSection';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +20,9 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection/>
-            <AboutSection {...homeObjOne}/>
+            <AboutSection {...aboutObj}/>
+            <SkillsSection {...skillsObj}/>
+            <Footer/>
         </>
     )
 }
