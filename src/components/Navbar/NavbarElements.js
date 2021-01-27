@@ -99,13 +99,15 @@ export const NavBtnLink = styled(LinkS)`
     border-radius: 50px;
     background: blue;
     white-space: nowrap;
-    padding: 10px 22px;
-    font-size: 1.5em;
+    padding: 8px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    color: white;
 
     &.active{
         transition: all 0.2s ease-in-out;

@@ -19,6 +19,10 @@ export const AboutWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    
+    @media screen and (max-width: 768px){
+        height: fit-content;
+    }
 `;
 
 export const AboutRow = styled.div`
