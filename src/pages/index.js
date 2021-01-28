@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
+import ExperienceSection from '../components/ExperienceSection';
 import Footer from '../components/Footer';
 import { aboutObj } from '../components/AboutSection/Data';
 import { skillsObj } from '../components/SkillsSection';
@@ -22,6 +23,7 @@ const Home = () => {
             <HeroSection/>
             <AboutSection {...aboutObj}/>
             <SkillsSection {...skillsObj}/>
+            <ExperienceSection/>
             <Footer/>
         </>
     )
