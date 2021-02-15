@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import style from './GalleryElements.css';
 
 const imagesBanali = [
   '//mir-s3-cdn-cf.behance.net/project_modules/max_1200/af7529112363099.6012e4f7102b1.png',
@@ -24,7 +25,7 @@ export default class GalleryBanali extends Component {
 
     return (
       <div>
-        <button type="button" onClick={() => this.setState({ isOpen: true })}>
+        <button className='galleryButton' type="button" onClick={() => this.setState({ isOpen: true })}>
           See projects
         </button>
 
