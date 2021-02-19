@@ -3,15 +3,18 @@ import styled from 'styled-components';
 export const ExperienceContainer = styled.div`
     text-align: center;
     background-color: #010606;
+    height : 100%;
     color: white;
     padding: 6%;
+    display: grid;
+    place-items: center center;
 `;
 
 export const ExperienceCardsWrap = styled.div`
-    display: flex;
-    flex-direction: row;
-    padding: 5% 0;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
 `;
 
 export const ExperienceCard = styled.div`
@@ -19,10 +22,14 @@ export const ExperienceCard = styled.div`
     background-color: white;
     color: black;
     border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    margin: 1rem;
 `;
 
 export const ExperienceImage = styled.div`
-    height: 100%auto;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
 `;
 
 export const ExperienceInfo = styled.div`
