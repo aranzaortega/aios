@@ -12,9 +12,13 @@ export const ExperienceContainer = styled.div`
 
 export const ExperienceCardsWrap = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: 500px 500px; 
     padding: 20px;
     grid-gap: 40px;
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: 100%; 
+    }
 `;
 
 export const ExperienceCard = styled.div`
@@ -24,6 +28,11 @@ export const ExperienceCard = styled.div`
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
     margin: 1rem;
+
+    @media screen and (max-width: 768px){
+        display: grid;
+        grid-template-columns: 100%;
+    }
 `;
 
 export const ExperienceImage = styled.div`

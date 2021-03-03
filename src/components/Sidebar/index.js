@@ -27,12 +27,6 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="experience"> 
                         Experience
                     </SidebarLink>
-                    <SidebarLink to="education"> 
-                        Education
-                    </SidebarLink>
-                    <SidebarLink to="portfolio"> 
-                        Portfolio
-                    </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to="contact">

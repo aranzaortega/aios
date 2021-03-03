@@ -8,6 +8,7 @@ import ExperienceSection from '../components/ExperienceSection';
 import Footer from '../components/Footer';
 import { aboutObj } from '../components/AboutSection/Data';
 import { skillsObj } from '../components/SkillsSection';
+import { experienceObj } from '../components/ExperienceSection';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +24,7 @@ const Home = () => {
             <HeroSection/>
             <AboutSection {...aboutObj}/>
             <SkillsSection {...skillsObj}/>
-            <ExperienceSection/>
+            <ExperienceSection {...experienceObj}/>
             <Footer/>
         </>
     )

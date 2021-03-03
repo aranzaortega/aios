@@ -7,10 +7,13 @@ import BookmeetingsImage from '../../images/gallery/bookmeetings.jpg';
 import ArcangelImage from '../../images/gallery/arcangel.jpg';
 import AIOSImage from '../../images/gallery/aios.jpg';
 
+export const experienceObj = {
+    id: 'experience'
+}
 
-const ExperienceSection = () => {
+const ExperienceSection = ({id}) => {
     return (
-        <div>
+        <div id={id}>
         <ExperienceContainer>
             <h1>EXPERIENCE</h1>
             <ExperienceCardsWrap>
